@@ -3,6 +3,6 @@ module V1
     version 'v1', using: :path
     format :json
 
-    mount ::V1::Hello
+    mount V1::Hello
   end
 end

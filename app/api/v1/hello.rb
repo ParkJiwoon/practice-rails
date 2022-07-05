@@ -12,5 +12,11 @@ module V1
     get '/hello/:id' do
       { res: "hello #{params[:id]}" }
     end
+
+    desc 'Return Simple Response'
+    get '/simple' do
+      response = { code: 200, message: "OK", success: true }
+      present response, with: V1::Entities::SimpleResponseEntity
+    end
   end
 end

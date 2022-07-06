@@ -47,3 +47,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem "grape", "~> 1.6"
 
 gem "grape-entity", "~> 0.10.1"
+
+gem "aasm", "~> 5.2"
